@@ -218,7 +218,7 @@ where
 \\
 \tilde{b}_n(k;F_0)&=1\wedge \frac{\min_{k\leq \ell\leq n}\left\{\ell/n-(1-\overline{\pi})F_0(Y_{(\ell+1)})\right\}+c_{n,\alpha}}{\overline{\pi}},
 \end{align*}
-where $c_{n,\alpha}=\{-\log(\alpha/2)/(2n)\}^{1/2}$ and $\alpha$ is the level of the test. 
+where $c_{n,\alpha}=\{-(1-\overline{\pi})\log(\alpha/2)/(2n)\}^{1/2}$ and $\alpha$ is the level of the test. 
 
 These quantities and the test can be derived as follows.
 
@@ -392,7 +392,7 @@ Unfortunately, the corresponding estimator is close to  the theoretical null $\m
 
 
 
-# Confidence region with a stability indicator for the rejected set
+# Confidence region with a stability indicator for empirical null procedures
 
 In @RV2019, it has been shown that using the plug-in BH procedure is safe when the data are sufficiently sparse (only few true alternatives), but that no method can mimick the oracle plug-in BH procedure otherwise, in the minimax sense. This means that, without enough sparsity, there exists a model configuration where the oracle plug-in BH procedure is out of reach. An example of such a configuration is given in the proof of the lower bound in  @RV2019.  In this configuration, the numerical experiments in @RV2019 shows that classical procedure indeed fails: either the power is low, or the FDR control is lost (as it is the case for the `locfdr` package). 
 
